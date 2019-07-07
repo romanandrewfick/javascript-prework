@@ -1,15 +1,15 @@
 
 
-var buttonScissors, buttonPaper, buttonRock;
+let buttonScissors, buttonPaper, buttonRock;
 
 /**
  * Buttons
  */
-function buttonClicked(buttonScissors) {
+function buttonClicked(argButtonName) {
   clearMessages();
   console.log(buttonScissors + ' został kliknięty');
 
-  var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
+  let argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
 
   /**
    * Describe this function...
@@ -58,8 +58,8 @@ function buttonClicked(buttonScissors) {
 }
 
 buttonRock = document.getElementById('button-rock');
-buttonRock.addEventListener('click', function(){ buttonClicked('Kamień'); });
+buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
 buttonPaper = document.getElementById('button-paper');
-buttonPaper.addEventListener('click', function(){ buttonClicked('Papier'); });
+buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
 buttonScissors = document.getElementById('button-scissors');
-buttonScissors.addEventListener('click', function(){ buttonClicked('Nożyce'); });
+buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
